@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Rationale&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap");
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/*@ 0)                      Reset Typography                            */
+/*^ ─────────────────────────────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 1)                        Website Box                               */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.website {
+  max-width: 1800px;
+  width: calc(100% - 40px);
+  margin: 20px auto;
+  border: 5px solid black;
+  background-color: rgb(207, 206, 204);
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(164, 163, 162);
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 2)                           Header                                 */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(207, 206, 204);
+  border-bottom: 5px solid black;
+  min-height: 75px;
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 3)                        Logo (Header)                             */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.logo-div {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+}
+
+.logo-div .logo {
+  display: block;
+  height: 80px;
+  padding: 10px;
+  width: auto;
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 4)                    Navigation Bar (Header)                       */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.navbar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.navlist {
+  display: flex;
+  list-style: none;
+  white-space: nowrap;
+  overflow: hidden;
+  gap: clamp(0px, 2vw, 50px);
+}
+
+.navlist li a {
+  display: inline-block;
+  font-family: "Rationale", "sans-serif";
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0 4px;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.navlist li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 5)                  Social Icons Bar (Header)                       */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.social-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 32px;
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+
+.social-list li .social-icon svg {
+  height: 30px;
+  width: 30px;
+  fill: rgba(0, 0, 0, 0.6);
+  transition: transform 0.15s ease, fill 0.15s ease;
+}
+
+.social-list li .social-icon svg:hover {
+  fill: black;
+  transform: scale(1.2);
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 6)                         Hero Section                             */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.hero {
+  width: 100%;
+  padding: 6vw 4vw;
+  background-color: rgb(207, 206, 204);
+  border-bottom: 5px solid black;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero-title {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: clamp(1.5rem, 6vw, 5rem);
+  color: black;
+  margin-bottom: 1rem;
+  letter-spacing: clamp(1px, 0.5vw, 8px);
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.hero-subtitle {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 2vw;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.hero-button {
+  display: inline-block;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: clamp(1rem, 3.5vw, 2rem);
+  color: black;
+  text-decoration: none;
+  padding: clamp(0.5rem, 1.5vw, 1rem) clamp(1rem, 2.5vw, 2rem);
+  border: 4px solid black;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.hero-button:hover {
+  background-color: black;
+  color: rgb(207, 206, 204);
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 7)                        About Section                             */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.about {
+  width: 100%;
+  background-color: rgb(207, 206, 204);
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 5px solid black;
+  grid-auto-rows: auto;
+  gap: 0;
+}
+
+@media (max-width: 1000px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  padding: clamp(1rem, 2vw, 2rem);
+  gap: clamp(1rem, 2vw, 2rem);
+  box-sizing: border-box;
+  min-height: 250px;
+  overflow: hidden;
+}
+
+.about-card:nth-child(1),
+.about-card:nth-child(3) {
+  border-right: 5px solid black;
+}
+
+.about-card:nth-child(1),
+.about-card:nth-child(2) {
+  border-bottom: 5px solid black;
+}
+
+.about-img {
+  flex: 0 0 auto;
+  width: clamp(125px, 20vw, 250px);
+  height: auto;
+  object-fit: cover;
+  border: 5px solid black;
+  display: block;
+}
+
+.about-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Rationale", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+@media (max-width: 1000px) {
+  .about-card:nth-child(1),
+  .about-card:nth-child(3) {
+    border-right: none;
+  }
+  .about-card {
+    border-bottom: 5px solid black;
+  }
+  .about-card:last-child {
+    border-bottom: none;
+  }
+
+  .about-text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 8)                       Creator Section                            */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.about-creator {
+  width: 100%;
+  background-color: rgb(207, 206, 204);
+  box-sizing: border-box;
+  border-bottom: 5px solid black;
+}
+
+.creator-heading {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  text-align: center;
+  color: black;
+  margin: 0;
+  padding: clamp(1rem, 2.5vw, 3rem);
+  border-bottom: 5px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.creator-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 2vw, 4rem);
+  padding: clamp(4rem, 4vw, 4rem);
+  box-sizing: border-box;
+}
+
+.creator-image-wrapper {
+  flex: 0 0 auto;
+  width: clamp(120px, 20vw, 300px);
+  height: clamp(120px, 20vw, 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(207, 206, 204);
+  overflow: hidden;
+}
+
+.creator-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.creator-text {
+  flex: 1;
+  font-family: "Rationale", sans-serif;
+  font-size: clamp(1.25rem, 2.25vw, 2rem);
+  line-height: 1.4;
+  max-width: 70%;
+  color: black;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .creator-content {
+    flex-direction: column;
+    padding: clamp(1rem, 3vw, 2rem);
+    gap: 0;
+  }
+
+  .creator-image-wrapper {
+    margin: 0 auto clamp(1rem, 3vw, 2rem) auto;
+  }
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 9)                        Gallery Section                           */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.gallery {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.gallery-track {
+  display: flex;
+  gap: 10px;
+  padding: 40px 0;
+  animation: scrollLoop 30s linear infinite;
+}
+
+.gallery-track img {
+  flex: 0 0 auto;
+  border: 5px solid black;
+  width: clamp(150px, 20vw, 300px);
+  height: auto;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+@keyframes scrollLoop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 10)                       Mission Section                           */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.mission {
+  width: 100%;
+  background-color: rgb(207, 206, 204);
+  box-sizing: border-box;
+  padding: clamp(2rem, 4vw, 4rem) 0;
+  border-bottom: 5px solid black;
+}
+
+.mission-heading {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  text-align: center;
+  margin: 0 0 clamp(3rem, 3vw, 3rem);
+  white-space: nowrap;
+}
+
+.mission-grid {
+  display: flex;
+  gap: clamp(2rem, 8vw, 3rem);
+  padding: 0 clamp(1.5rem, 4vw, 1.5rem);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mission-card {
+  flex: 1 1 0;
+  max-width: 500px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.mission-title {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+  color: black;
+  white-space: nowrap;
+}
+
+.mission-desc {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(1rem, 1.75vw, 1.5rem);
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 1000px) {
+  .mission-grid {
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mission-card {
+    display: flex;
+    flex: 1 1 200px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    max-width: clamp(50rem, 5vw, 100rem);
+  }
+  .mission-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: clamp(1.5rem, 1.5vw, 1.75rem);
+  }
+
+  .mission-heading {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    margin: 0;
+  }
+}
+
+.about,
+.mission,
+.gallery,
+.contacts {
+  scroll-margin-block: 25vh;
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 11)                          Footer                                 */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.footer {
+  width: 100%;
+  background-color: rgb(50, 50, 50);
+  border-top: 5px solid black;
+  box-sizing: border-box;
+  padding: clamp(0.75rem, 2vw, 1.5rem) 0;
+  text-align: center;
+}
+
+.footer-note {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(0.6rem, 1vw, 0.9rem);
+  color: rgba(200, 200, 200, 0.7);
+  margin: clamp(0.75rem, 1vh, 1rem);
+  line-height: 1.4;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.footer-text {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: clamp(0.75rem, 2vw, 1.5rem);
+  color: #e0e0e0;
+  margin: 0;
+  line-height: 1.75;
+  white-space: normal;
+  word-wrap: break-word;
+}

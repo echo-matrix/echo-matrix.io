@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RetroPunks NFT</title>
+    <link rel="stylesheet" href="website.css" />
+  </head>
+  <body>
+    <div class="website">
+      <header class="header">
+        <div class="logo-div">
+          <a href="#">
+            <img
+              src="images/retropunks.png"
+              class="logo"
+              alt="RetroPunks Logo"
+            />
+          </a>
+        </div>
+
+        <nav class="navbar">
+          <ul class="navlist">
+            <li><a href="#about">About</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#creator">Creator</a></li>
+          </ul>
+        </nav>
+
+        <div class="social-div">
+          <ul class="social-list">
+            <li>
+              <a
+                href="https://instagram.com"
+                class="social-icon"
+                aria-label="Instagram"
+                alt="Instagram"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 
+                        319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 
+                        74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 
+                        26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 
+                        26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 
+                        0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 
+                        1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 
+                        0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 
+                        2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 
+                        9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 
+                        9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 
+                        132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://x.com"
+                class="social-icon"
+                aria-label="X"
+                alt="X"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 
+                    275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://discord.com"
+                class="social-icon"
+                aria-label="Discord"
+                alt="Discord"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                  <path
+                    d="M524.5 69.8a1.5 1.5 0 0 0-.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 
+                    0-1.9.9 337.5 337.5 0 0 0-14.9 30.6 447.8 447.8 0 0 0-134.4 0 309.5 309.5 0 
+                    0 0-15.1-30.6 1.9 1.9 0 0 0-1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 
+                    0-.8.7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 
+                    0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 
+                    0-1-2.6 321.2 321.2 0 0 1-45.9-21.9 1.9 1.9 0 0 1-.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 
+                    1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9.2c2.9 2.4 6 4.9 
+                    9.1 7.2a1.9 1.9 0 0 1-.2 3.1 301.4 301.4 0 0 1-45.9 21.8 1.9 1.9 0 0 0-1 2.6 
+                    391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1.7A486 486 0 0 0 610.7 405.7a1.9 
+                    1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2s23.8-59.2 
+                    52.8-59.2c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 
+                    0c-29 0-52.8-26.6-52.8-59.2s23.8-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2C470.7 
+                    311 447.5 337.6 417.9 337.6z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://etherscan.com"
+                class="social-icon"
+                aria-label="Etherscan"
+                alt="Etherscan"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 
+                    383.4L8 290.6 160 512l152-221.4-152 92.8z"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://opensea.io"
+                class="social-icon"
+                aria-label="OpenSea"
+                alt="OpenSea"
+              >
+                <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  height="100%"
+                  style="
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    stroke-linejoin: round;
+                    stroke-miterlimit: 2;
+                  "
+                  version="1.1"
+                  viewBox="0 0 412 412"
+                  width="100%"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:serif="http://www.serif.com/"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g
+                    id="Artboard1"
+                    transform="matrix(1,0,0,1,-0.75957,-0.739775)"
+                  >
+                    <rect
+                      height="411.112"
+                      style="fill: none"
+                      width="411.112"
+                      x="0.76"
+                      y="0.74"
+                    />
+                    <clipPath id="_clip1">
+                      <rect
+                        height="411.112"
+                        width="411.112"
+                        x="0.76"
+                        y="0.74"
+                      />
+                    </clipPath>
+                    <g clip-path="url(#_clip1)">
+                      <g
+                        transform="matrix(4.16667,0,0,4.16667,-1.64573,-1.60285)"
+                      >
+                        <path
+                          d="M50.093,0.74C77.321,0.74 99.427,22.845 99.427,50.073C99.427,77.301 77.321,99.407 50.093,99.407C22.865,99.407 0.76,77.301 0.76,50.073C0.76,22.845 22.865,0.74 50.093,0.74ZM63.569,36.482L63.831,36.818C63.961,36.986 64.088,37.15 64.2,37.3C64.3,37.5 64.5,37.7 64.6,38C64.775,38.263 64.931,38.525 65.084,38.788L65.216,39.012C65.369,39.275 65.525,39.538 65.7,39.8C65.8,40.1 66,40.4 66.1,40.7C66.5,41.5 66.8,42.3 66.9,43.2C67,43.4 67,43.6 67,43.7C67.1,43.9 67.1,44.2 67.1,44.5C67.2,45.4 67.1,46.2 67,47.1C66.963,47.25 66.925,47.386 66.888,47.518L66.813,47.782C66.775,47.914 66.738,48.05 66.7,48.2C66.6,48.5 66.5,48.9 66.3,49.3C66,50 65.6,50.7 65.2,51.4C65.1,51.6 64.9,51.9 64.7,52.2C64.5,52.5 64.3,52.7 64.2,53C64,53.3 63.7,53.6 63.5,53.9C63.3,54.2 63.1,54.5 62.8,54.8C62.5,55.2 62.1,55.6 61.8,56C61.6,56.2 61.4,56.5 61.1,56.7C60.9,56.9 60.7,57.2 60.4,57.4C60.1,57.7 59.8,58 59.5,58.2L58.9,58.7C58.8,58.8 58.7,58.8 58.6,58.8L54.2,58.8L54.2,64.4L59.7,64.4C60.9,64.4 62.1,64 63,63.2C63.3,62.9 64.7,61.7 66.4,59.9C66.5,59.8 66.5,59.8 66.6,59.8L81.8,55.4C82.4,55.1 82.6,55.3 82.6,55.6L82.6,58.8C82.6,59 82.5,59.1 82.3,59.2C81.3,59.6 77.8,61.2 76.4,63.2C72.7,68.3 69.9,75.6 63.7,75.6L37.6,75.6C28.4,75.6 20.9,68.1 20.9,58.8L20.9,58.5C20.9,58.3 21.1,58.1 21.3,58.1L36,58.1C36.3,58.1 36.5,58.4 36.5,58.6C36.4,59.5 36.6,60.5 37,61.4C37.9,63.2 39.7,64.2 41.6,64.2L48.8,64.2L48.8,58.6L41.7,58.6C41.3,58.6 41.1,58.2 41.3,57.9C41.4,57.8 41.5,57.7 41.6,57.5C42.3,56.5 43.2,55.1 44.2,53.4C44.9,52.3 45.5,51 46,49.8C46.1,49.6 46.2,49.4 46.3,49.1C46.4,48.7 46.6,48.3 46.7,48C46.8,47.7 46.9,47.4 47,47.1C47.2,46.1 47.3,45 47.3,43.8C47.3,43.4 47.3,42.9 47.2,42.4C47.2,42.181 47.181,41.962 47.159,41.744L47.141,41.556C47.119,41.337 47.1,41.119 47.1,40.9C47.1,40.5 47,40 46.9,39.6C46.8,38.9 46.7,38.3 46.5,37.6L46.4,37.4C46.3,37 46.2,36.5 46,36.1C45.6,34.7 45.1,33.3 44.6,32.1C44.4,31.6 44.2,31.1 44,30.6C43.7,29.9 43.4,29.2 43.1,28.6C43,28.3 42.8,28.1 42.7,27.8C42.6,27.5 42.4,27.2 42.3,26.9C42.2,26.7 42.1,26.5 42,26.3L41.1,24.7C41,24.5 41.2,24.2 41.4,24.3L46.9,25.8L47.6,26L48.4,26.2L48.7,26.3L48.7,23C48.7,21.4 50,20.1 51.5,20.1C52.3,20.1 53,20.4 53.5,20.9C54,21.4 54.3,22.1 54.3,22.9L54.3,27.7L54.9,27.9C54.9,27.9 55,27.9 55,28C55.1,28.1 55.3,28.3 55.6,28.5C55.8,28.7 56,28.9 56.3,29.1C56.8,29.5 57.5,30.1 58.2,30.7C58.4,30.9 58.6,31 58.7,31.2C59.6,32 60.6,33 61.6,34.1C61.9,34.4 62.1,34.7 62.4,35C62.7,35.3 62.9,35.7 63.2,36C63.313,36.15 63.439,36.314 63.569,36.482ZM24.7,51.8L24.9,51.5L37.9,31.2C38.1,30.9 38.5,30.9 38.7,31.3C40.9,36.2 42.7,42.2 41.9,46C41.5,47.6 40.5,49.7 39.3,51.6C39.2,51.9 39,52.2 38.8,52.4C38.7,52.5 38.6,52.6 38.4,52.6L25,52.6C24.7,52.5 24.5,52.1 24.7,51.8Z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="hero">
+        <h1 class="hero-title">RETROPUNKS</h1>
+        <p class="hero-subtitle">
+          An exclusive free collection of 10,000 retro PFP NFTs on the Ethereum
+          chain.
+        </p>
+        <a href="#" class="hero-button">MINT</a>
+      </section>
+
+      <main class="main-content">
+        <section id="about" class="about">
+          <div class="about-grid">
+            <!-- Card 1 -->
+            <div class="about-card">
+              <img src="images/01.png" alt="Pixelpunk" class="about-img" />
+              <p class="about-text">
+                The RetroPunks are a community of 10,000 punks living in the
+                PUNKWRLD, in their own retro-dystopian universe, powered by a
+                blend of the past and the future.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="about-card">
+              <img src="images/03.png" alt="Pixelpunk" class="about-img" />
+              <p class="about-text">
+                Each punk is uniquely special, and is more than just a PFP NFT,
+                it represents an identity, a key into the PUNKWRLD, a talisman
+                in the NFT world, an alter-ego on the web.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="about-card">
+              <img src="images/04.png" alt="Pixelpunk" class="about-img" />
+              <p class="about-text">
+                The RetroPunks were inspired by the original CryptoPunks, and
+                created with a vision to sail the seas of the Web3 and NFT world
+                by forming a community of enthusiast members.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="about-card">
+              <img src="images/02.png" alt="Pixelpunk" class="about-img" />
+              <p class="about-text">
+                The RetroPunks are to be perhaps one of many projects created by
+                ECHO and related to the PUNKWRLD, and so the journey
+                continues...
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="mission" class="mission">
+          <h2 class="mission-heading">MISSION</h2>
+          <div class="mission-grid">
+            <div class="mission-card">
+              <h3 class="mission-title">1. Community</h3>
+              <p class="mission-desc">
+                Bring together and unite a community of like-minded enthusiasts
+                and those interested to build projects.
+              </p>
+            </div>
+            <div class="mission-card">
+              <h3 class="mission-title">2. Exploration</h3>
+              <p class="mission-desc">
+                Explore and push the boundaries of the vast world of Web3, NFTs,
+                blockchain, and crypto.
+              </p>
+            </div>
+            <div class="mission-card">
+              <h3 class="mission-title">3. Innovation</h3>
+              <p class="mission-desc">
+                Create and build projects that last long into the future and leave behind a great legacy in the blockchain and Web3 space.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="creator" class="about-creator">
+          <h2 class="creator-heading">ABOUT THE CREATOR</h2>
+          <div class="creator-content">
+            <div class="creator-image-wrapper">
+              <img
+                src="images/echo.png"
+                alt="Creator portrait"
+                class="creator-img"
+              />
+            </div>
+            <p class="creator-text">
+              The RetroPunks were created by anonymous, artist, programmer, and
+              Web3 / NFT enthusiast ECHO. The project was inspired by the
+              original CryptoPunks, as well as the NFT boom of 2021. It was
+              created with a vision to sail the seas of the Web3 and NFT world
+              by uniting people to create a large community of enthusiast
+              members.
+            </p>
+          </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+          <div class="gallery-track">
+            <img src="gallery/1.png" alt="" />
+            <img src="gallery/21.png" alt="" />
+            <img src="gallery/2.png" alt="" />
+            <img src="gallery/22.png" alt="" />
+            <img src="gallery/3.png" alt="" />
+            <img src="gallery/23.png" alt="" />
+            <img src="gallery/4.png" alt="" />
+            <img src="gallery/24.png" alt="" />
+            <img src="gallery/5.png" alt="" />
+            <img src="gallery/25.png" alt="" />
+            <img src="gallery/6.png" alt="" />
+            <img src="gallery/26.png" alt="" />
+            <img src="gallery/7.png" alt="" />
+            <img src="gallery/27.png" alt="" />
+            <img src="gallery/8.png" alt="" />
+            <img src="gallery/28.png" alt="" />
+            <img src="gallery/9.png" alt="" />
+            <img src="gallery/29.png" alt="" />
+            <img src="gallery/10.png" alt="" />
+            <img src="gallery/30.png" alt="" />
+            <img src="gallery/11.png" alt="" />
+            <img src="gallery/31.png" alt="" />
+            <img src="gallery/12.png" alt="" />
+            <img src="gallery/32.png" alt="" />
+            <img src="gallery/13.png" alt="" />
+            <img src="gallery/33.png" alt="" />
+            <img src="gallery/14.png" alt="" />
+            <img src="gallery/34.png" alt="" />
+            <img src="gallery/15.png" alt="" />
+            <img src="gallery/35.png" alt="" />
+            <img src="gallery/16.png" alt="" />
+            <img src="gallery/36.png" alt="" />
+            <img src="gallery/17.png" alt="" />
+            <img src="gallery/37.png" alt="" />
+            <img src="gallery/18.png" alt="" />
+            <img src="gallery/38.png" alt="" />
+            <img src="gallery/19.png" alt="" />
+            <img src="gallery/39.png" alt="" />
+            <img src="gallery/20.png" alt="" />
+            <img src="gallery/40.png" alt="" />
+            <img src="gallery/21.png" alt="" />
+            <img src="gallery/41.png" alt="" />
+            <img src="gallery/22.png" alt="" />
+            <img src="gallery/42.png" alt="" />
+            <img src="gallery/23.png" alt="" />
+            <img src="gallery/43.png" alt="" />
+            <img src="gallery/24.png" alt="" />
+            <img src="gallery/44.png" alt="" />
+            <img src="gallery/25.png" alt="" />
+            <img src="gallery/45.png" alt="" />
+            <img src="gallery/26.png" alt="" />
+            <img src="gallery/46.png" alt="" />
+            <img src="gallery/27.png" alt="" />
+            <img src="gallery/47.png" alt="" />
+            <img src="gallery/28.png" alt="" />
+            <img src="gallery/48.png" alt="" />
+            <img src="gallery/29.png" alt="" />
+            <img src="gallery/49.png" alt="" />
+            <img src="gallery/30.png" alt="" />
+            <img src="gallery/50.png" alt="" />
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer-note">
+          All content is for informational purposes only, no obligations. The
+          RetroPunks are not responsible for what those who mint our NFTs do
+          with them.
+        </p>
+        <p class="footer-text">© 2025 RetroPunks. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
