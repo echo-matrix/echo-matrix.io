@@ -51,12 +51,12 @@ html {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  padding-left: clamp(12px, 10vw, 60px);
+  padding-left: clamp(12px, 3vw, 60px);
 }
 
 .logo-div .logo {
   display: block;
-  height: clamp(70px, 10vw, 80px);
+  height: clamp(60px, 10vw, 80px);
   width: auto;
   padding: 10px;
 }
@@ -104,7 +104,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: clamp(12px, 10vw, 60px);
+  padding-right: clamp(12px, 3vw, 60px);
 }
 
 .social-list {
