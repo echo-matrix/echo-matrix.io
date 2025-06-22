@@ -95,12 +95,18 @@ html {
   color: rgb(0, 0, 0);
 }
 
+@media (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+}
+
 /*^ ─────────────────────────────────────────────────────────────────── */
 /** 5)                  Social Icons Bar (Header)                       */
 /*^ ─────────────────────────────────────────────────────────────────── */
 
 .social-div {
-  flex: 0 0 auto;  
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,12 +129,6 @@ html {
 .social-list li .social-icon svg:hover {
   fill: black;
   transform: scale(1.2);
-}
-
-@media (max-width: 1000px) {
-  .navbar {
-    display: none;
-  }
 }
 
 /*^ ─────────────────────────────────────────────────────────────────── */
@@ -271,7 +271,111 @@ html {
 }
 
 /*^ ─────────────────────────────────────────────────────────────────── */
-/** 8)                       Creator Section                            */
+/** 8)                       Roadmap Section                           */
+/*^ ─────────────────────────────────────────────────────────────────── */
+
+.roadmap {
+  width: 100%;
+  background-color: rgb(207, 206, 204);
+  box-sizing: border-box;
+  border-bottom: 5px solid black;
+  padding: clamp(2rem, 4vw, 4rem) 0;
+}
+
+/* Container to constrain width and center the roadmap items */
+.roadmap-container {
+  max-width: 1000px; /* increased max-width for wider boxes */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vw, 3rem); /* larger vertical gap */
+  padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+.roadmap-heading {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: clamp(2rem, 6vw, 3.25rem); /* bigger heading */
+  text-align: center;
+  margin: 0;
+  color: black;
+}
+
+/* Each item is a centered flex row (or column on small screens) */
+.roadmap-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center the group horizontally */
+  gap: clamp(1.5rem, 3vw, 3rem); /* larger gap between image and text */
+  padding: clamp(2rem, 3vw, 3rem); /* increased padding */
+  box-sizing: border-box;
+  border: 6px solid black; /* slightly thicker border for bigger look */
+  background-color: rgb(207, 206, 204);
+}
+
+/* Zig-zag: for even items, reverse order */
+.roadmap-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Image wrapper styling */
+.roadmap-img-wrapper {
+  flex: 0 0 auto;
+  width: clamp(125px, 25vw, 200px); /* larger image wrapper */
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(207, 206, 204);
+  overflow: hidden;
+  border: 6px solid black; /* match border thickness */
+}
+
+.roadmap-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content styling */
+.roadmap-content {
+  flex: 1 1 0; /* allow shrinking/growing */
+  max-width: 600px; /* allow wider text area */
+  text-align: center; /* center text inside the box */
+}
+
+/* Title uses Kdam Thmor Pro, bigger */
+.roadmap-title {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.25rem); /* larger title */
+  margin: 0 0 clamp(1rem, 1.5vw, 1.5rem);
+  color: black;
+  white-space: normal;
+}
+
+.roadmap-desc {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.5rem); /* larger description */
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+  word-wrap: break-word;
+}
+
+/* Responsive: stack items vertically on smaller screens */
+@media (max-width: 800px) {
+  .roadmap-item {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .roadmap-content {
+    text-align: center;
+  }
+  .roadmap-img-wrapper {
+    margin-bottom: clamp(1.5rem, 3vw, 2rem);
+  }
+}
+
+/*^ ─────────────────────────────────────────────────────────────────── */
+/** 9)                         Creator Section                         */
 /*^ ─────────────────────────────────────────────────────────────────── */
 
 .about-creator {
@@ -283,7 +387,7 @@ html {
 
 .creator-heading {
   font-family: "Press Start 2P", sans-serif;
-  font-size: clamp(1rem, 4vw, 2.5rem);
+  font-size: clamp(1rem, 4vw, 3.25rem);
   text-align: center;
   color: black;
   margin: 0;
@@ -291,7 +395,6 @@ html {
   border-bottom: 5px solid black;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: clip;
 }
 
 .creator-content {
@@ -347,7 +450,7 @@ html {
 }
 
 /*^ ─────────────────────────────────────────────────────────────────── */
-/** 9)                        Gallery Section                           */
+/** 10)                        Gallery Section                         */
 /*^ ─────────────────────────────────────────────────────────────────── */
 
 .gallery {
@@ -382,7 +485,7 @@ html {
 }
 
 /*^ ─────────────────────────────────────────────────────────────────── */
-/** 10)                       Mission Section                           */
+/** 11)                        Mission Section                         */
 /*^ ─────────────────────────────────────────────────────────────────── */
 
 .mission {
@@ -395,7 +498,7 @@ html {
 
 .mission-heading {
   font-family: "Press Start 2P", sans-serif;
-  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-size: clamp(2rem, 5vw, 3.25rem);
   text-align: center;
   margin: 0 0 clamp(3rem, 3vw, 3rem);
   white-space: nowrap;
@@ -465,7 +568,7 @@ html {
 }
 
 /*^ ─────────────────────────────────────────────────────────────────── */
-/** 11)                          Footer                                 */
+/** 12)                          Footer                                 */
 /*^ ─────────────────────────────────────────────────────────────────── */
 
 .footer {
