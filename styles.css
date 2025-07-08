@@ -148,7 +148,7 @@ html {
   font-family: "Press Start 2P", sans-serif;
   font-size: clamp(1.5rem, 6vw, 5rem);
   color: black;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   letter-spacing: clamp(1px, 0.5vw, 8px);
   line-height: 1.1;
   white-space: nowrap;
@@ -160,7 +160,6 @@ html {
   font-family: "Kdam Thmor Pro", sans-serif;
   font-size: clamp(1rem, 3vw, 1.5rem);
   color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 2vw;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -183,6 +182,28 @@ html {
 .hero-button:hover {
   background-color: black;
   color: rgb(207, 206, 204);
+}
+
+/* As Seen On styling */
+.seen-on {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: clamp(0.25rem, 0.5vw, 1rem) 0;
+}
+
+.seen-on-text {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+}
+
+.seen-on-logo {
+  display: block;
+    height: clamp(3.5rem, 8vw, 5rem);
+  width: auto;
 }
 
 /*^ ─────────────────────────────────────────────────────────────────── */
